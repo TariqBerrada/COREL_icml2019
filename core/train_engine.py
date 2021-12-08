@@ -30,9 +30,10 @@ from torchvision.datasets import CIFAR10, CIFAR100
 from torchvision import transforms
 
 import torchph
-from torchph.pershom import pershom_backend
-vr_l1_persistence = pershom_backend.__C.VRCompCuda__vr_persistence_l1
+# from torchph.pershom import pershom_backend
+# vr_l1_persistence = pershom_backend.__C.VRCompCuda__vr_persistence_l1
 
+from torchph.pershom.pershom_backend import vr_persistence_l1
 
 # region 
 
