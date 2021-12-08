@@ -18,12 +18,23 @@ PAPER_COLORS = {
 # REPOSITORY AND SET <DATAPATH> ACCORDINGLY!
 #
 
+# class paths:
+# 	ablation_bkb_dir = '<PATH>/COREL_icml2019/models/ablation'
+# 	ablation_res_dir = '<PATH>/COREL_icml2019/results_ablation'
+
+# 	performance_bkb_dir = '<PATH>/COREL_icml2019/models/performance'
+# 	performance_res_dir = '<PATH>/COREL_icml2019/results_performance'
+
+# 	dataset_root_generic = '<DATAPATH>'
+# 	dataset_root_special = {}
+
+
 class paths:
-	ablation_bkb_dir = '<PATH>/COREL_icml2019/models/ablation'
-	ablation_res_dir = '<PATH>/COREL_icml2019/results_ablation'
+	ablation_bkb_dir = './models/ablation'
+	ablation_res_dir = './results_ablation'
 
-	performance_bkb_dir = '<PATH>/COREL_icml2019/models/performance'
-	performance_res_dir = '<PATH>/COREL_icml2019/results_performance'
+	performance_bkb_dir = './models/performance'
+	performance_res_dir = './results_performance'
 
-	dataset_root_generic = '<DATAPATH>'
+	dataset_root_generic = './data'
 	dataset_root_special = {}
