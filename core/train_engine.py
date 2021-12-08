@@ -35,6 +35,8 @@ import torchph
 
 from torchph.pershom.pershom_backend import vr_persistence_l1
 
+vr_l1_persistence=vr_persistence_l1
+
 # region 
 
 
