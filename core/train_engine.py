@@ -29,7 +29,8 @@ from torch.utils.data import DataLoader
 from torchvision.datasets import CIFAR10, CIFAR100
 from torchvision import transforms
 
-from torchph.chofer_torchex.pershom import pershom_backend
+import torchph
+from torchph.pershom import pershom_backend
 vr_l1_persistence = pershom_backend.__C.VRCompCuda__vr_persistence_l1
 
 
