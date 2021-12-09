@@ -214,7 +214,7 @@ def check_config(config):
         assert a in data_args
 
 
-def train(root_folder, config):
+def train(root_folder, config, _id):
     check_config(config)
 
     train_args = config['train_args']
@@ -294,7 +294,7 @@ def train(root_folder, config):
             epoch,
             np.array(log['rec_loss'][-int(len(ds)/train_args['batch_size']):]).mean()*train_args['rec_loss_w'],
             np.array(log['top_loss'][-int(len(ds)/train_args['batch_size']):]).mean()*train_args['top_loss_w']))
-
+        torch.save(model, './model_%d_ckpt.pht'%_id)
     # Create a unique base filename
     the_uuid = str(uuid.uuid4())
     basefile = os.path.join(root_folder, the_uuid)

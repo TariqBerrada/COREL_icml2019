@@ -16,7 +16,7 @@ if __name__ == "__main__":
         'train_args': {
             'learning_rate': [0.001], 
             'batch_size'   : [100], 
-            'n_epochs'     : [50], 
+            'n_epochs'     : [20], # [50], 
             'rec_loss_w'   : [1.0],
             'top_loss_w'   : [20.0]
         }, 
@@ -52,4 +52,4 @@ if __name__ == "__main__":
     for i,c in enumerate(configs):  
         print(c)
         print('Config {}/{}'.format(i+1,len(configs)))
-        train(path, c)
+        train(path, c, i+1)
