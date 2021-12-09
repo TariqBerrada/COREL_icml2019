@@ -314,7 +314,7 @@ def train(root_folder, config, _id):
 class BackboneTrainResult:
 
     config_ext = '.config.pickle'
-    model_ext  = '.model.pht'
+    model_ext  = './model_1_ckpt.pht' # '.model.pht'
     log_ext    = '.log.pickle'
 
     def __init__(self, path_base):
